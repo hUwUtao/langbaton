@@ -1,3 +1,18 @@
+# LangBatOn FrontPage
+
+Because the server isn't funded anymore. I decided to public the source code, and soon be used somewhere \([here it is](https://langdua.net), just without partial hydration thing bcof SPA\). Have fun
+
+## Features
+
+- Cool looking website
+- Some cool thing i made at `/view/<yourminecraftusername>`
+
+## License
+
+Project license under WTFPL license.
+
+# Astro README
+
 # Welcome to [Astro](https://astro.build)
 
 [![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/basics)

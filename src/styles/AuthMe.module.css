@@ -1,0 +1,29 @@
+/* mininav */
+.minav {
+  position: fixed;
+  background: #fff;
+  color: #000;
+
+  right: 5vw;
+  top: 2vh;
+
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+
+  padding: 3px;
+  border-radius: 99em;
+}
+.minav > * {
+  margin: 2px;
+}
+.minav > img {
+    border-radius: 99em;
+}
+.minav > span {
+    padding: 0 10px 0 5px;
+}
+/* prompt-out dialog for login and profile view */
+.dialog {
+}

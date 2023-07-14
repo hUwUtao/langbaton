@@ -1,0 +1,37 @@
+{
+  "name": "web",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build:astro": "astro build",
+    "build:server": "esbuild server.mts --sourcemap --bundle --platform=node --target=node16.15 --outfile=dist/server.js && terser dist/server.js -o dist/server.min.js -c -m --source-map",
+    "build": "pnpm build:astro && pnpm build:server",
+    "preview": "astro preview",
+    "astro": "astro",
+    "node": "node --loader ts-node/esm server.mts"
+  },
+  "devDependencies": {
+    "@astrojs/node": "^1.0.1",
+    "@astrojs/react": "^1.1.0",
+    "@types/express": "^4.17.13",
+    "@types/node": "^18.7.15",
+    "@types/qs": "^6.9.7",
+    "@types/react": "^18.0.17",
+    "astro": "^1.1.1",
+    "axios": "^0.27.2",
+    "esbuild": "^0.15.7",
+    "https": "^1.0.0",
+    "qs": "^6.11.0",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+    "terser": "^5.15.0",
+    "util": "^0.12.4",
+    "vite": "^3.1.0"
+  },
+  "dependencies": {
+    "express": "^4.18.1",
+    "ts-node": "^10.9.1"
+  }
+}

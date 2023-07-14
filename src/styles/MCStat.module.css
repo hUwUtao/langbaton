@@ -1,0 +1,60 @@
+.union {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.ip {
+  border-radius: 0.9em;
+  overflow: hidden;
+  display: flex;
+}
+
+.ip > * {
+  padding: 1em 1em;
+}
+
+.counter {
+  margin-left: 1em;
+}
+
+.ip > span {
+  font-family: "Overpass Mono", monospace;
+  background: #fff;
+  color: #000;
+}
+
+.cpyb {
+  background: #1266f1;
+  color: #fff;
+  padding: 1em 2em;
+}
+
+.cpyb:hover {
+  background: #0f59d4;
+  color: #fff;
+  padding: 1em 2em;
+}
+
+.cpyd {
+  background: #00b74a !important;
+}
+
+.cpyd:hover {
+  background: #00993e !important;
+}
+
+.i {
+  height: 1.3em;
+  margin-right: 0.5em;
+}
+
+.dot {
+  color: #f00;
+}
+
+.dotg {
+  color: #0f0;
+}

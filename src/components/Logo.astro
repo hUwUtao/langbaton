@@ -1,0 +1,21 @@
+---
+import logo from "../assets/logo.png";
+---
+
+<a href="/">
+  <img src={logo} alt="Home" class="hlog" />
+</a>
+<style>
+  .hlog {
+    max-width: 40vw;
+    padding: 2vh;
+    transition: all 0.5s ease-in-out;
+  }
+
+  @media (max-width: 900px) {
+    .hlog {
+      max-width: 80vw;
+      padding: 10px;
+    }
+  }
+</style>

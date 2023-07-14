@@ -1,0 +1,12 @@
+{
+  "endpoint": "/api",
+  "ip": "langdua.net",
+  "nav": {
+    "discord": "/discord",
+    "group": "https://www.facebook.com/groups/3342929312468073",
+    "punish": "/litebans"
+  },
+  "authme": {
+    "enable": false
+  }
+}

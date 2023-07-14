@@ -1,0 +1,92 @@
+---
+import Layout from "../layouts/Layout.astro";
+import MCStat from "../components/MCStat";
+// import AuthMe from "../components/AuthMe";
+import config from "../config.json";
+
+import dis from "../assets/dis.svg";
+import fbw from "../assets/fbw.svg";
+import gav from "../assets/gav.svg";
+const { discord, group, punish } = config.nav;
+---
+
+<Layout title="Welcome to Astro.">
+  <!-- {config.authme.enable && <AuthMe client:load />} -->
+  <MCStat client:load />
+  <div class="links">
+    <a href={discord} class="discord" type="button">
+      <img src={dis} alt="Discord" class="i" />
+      Discord
+    </a>
+    <a href={group} class="facebook" type="button">
+      <img src={fbw} alt="Facebook Group" class="i" />
+      Group
+    </a>
+    <a href={punish} class="punish" type="button">
+      <img src={gav} alt="Punishment" class="i" />
+      Xử phạt
+    </a>
+  </div>
+</Layout>
+
+<style>
+  :global(button, a) {
+    border: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    transition: background 0.1s ease-in-out;
+  }
+
+  .links {
+    display: flex;
+    padding: 1em 0;
+  }
+
+  .links > a {
+    font-size: 0.9em;
+    border-radius: 0.9em;
+    padding: 1em 2em;
+    margin: 0 0.5em;
+    text-decoration: none;
+    color: #fff;
+    transition: background 0.3s ease-in-out;
+  }
+
+  .discord {
+    background: #5865f2;
+  }
+
+  .discord:hover {
+    background: #4753cc;
+  }
+
+  .facebook {
+    background: #1877F2;
+  }
+
+  .facebook:hover {
+    background: #1360c5;
+  }
+
+  :global(.cpyd) {
+    background: #00b74a !important;
+  }
+
+  ::global(.cpyd:hover) {
+    background: #00993e !important;
+  }
+
+  .punish {
+    background: #f93154;
+  }
+
+  .punish:hover {
+    background: #d62444;
+  }
+
+  .i {
+    height: 1.3em;
+    margin-right: 0.5em;
+  }
+</style>

@@ -2,6 +2,8 @@
 
 Because the server isn't funded anymore. I decided to public the source code, and soon be used somewhere \([here it is](https://langdua.net), just without partial hydration thing bcof SPA\). Have fun
 
+> And we also have [experimental paywall page](https://github.com/hUwUtao/langbaton-paywall)
+
 ## Features
 
 - Cool looking website
